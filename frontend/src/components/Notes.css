@@ -1,0 +1,178 @@
+/* Notes.css */
+
+/* Modal Styles */
+.modal-title {
+    color: #e74c3c; /* Dark red */
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+/* Empty State Styles */
+.empty-state {
+    text-align: center;
+    font-size: 18px;
+    color: #e74c3c; /* Dark red */
+    margin-top: 20px;
+}
+
+/* Note Card Styles */
+.card {
+    border: 2px solid #f39c12; /* Orange */
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff; /* White */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #3498db; /* Bright blue */
+    color: #ffffff; /* White */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-text {
+    font-size: 16px;
+    color: #333; /* Dark gray */
+    padding: 10px;
+}
+
+.card-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #f39c12; /* Orange */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #f8f9fa; /* Light gray */
+}
+
+.edit-button,
+.delete-button {
+    cursor: pointer;
+    font-size: 18px;
+    color: #e74c3c; /* Dark red */
+    transition: color 0.2s;
+}
+
+.edit-button:hover,
+.delete-button:hover {
+    color: #c0392b; /* Darker red on hover */
+}
+
+/* Modal Styles */
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-header {
+    background-color: #3498db; /* Bright blue */
+    color: #ffffff; /* White */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.modal-title {
+    font-size: 24px;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-footer {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Form Styles */
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #f39c12; /* Orange */
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+/* Submit Button Styles */
+.btn-primary {
+    background-color: #e74c3c; /* Dark red */
+    border: none;
+    border-radius: 5px;
+    color: #ffffff; /* White */
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+/* Additional Styles for Notes Component */
+
+/* Header Styles */
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333; /* Dark gray */
+    font-weight: bold;
+}
+
+/* Add Note Button Styles */
+.add-note-button {
+    background-color: #27ae60; /* Dark green */
+    color: #ffffff; /* White */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.add-note-button:hover {
+    background-color: #219d54; /* Darker green on hover */
+}
+
+/* Error Message Styles */
+.error-message {
+    color: #e74c3c; /* Dark red for error messages */
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Success Message Styles */
+.success-message {
+    color: #27ae60; /* Dark green for success messages */
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+
+    .modal-dialog {
+        max-width: 100%;
+    }
+}
